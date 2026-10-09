@@ -17,7 +17,7 @@ namespace Task_10_Session_12
             //foreach (var product in result)
             //    Console.WriteLine(product);
 
-            //Query Syntac
+            //Query Syntax
             //var result = from p in ProductsList
             //             where p.UnitsInStock == 0
             //             select p;
@@ -77,11 +77,11 @@ namespace Task_10_Session_12
 
             //2.
             //Fluent Syntax
-            //var result = CustomersList.Select(c => new { c.CustomerID, c.CustomerName, NoOfOrders = c.Orders.Length });
+            //var result = CustomersList.Select(c => new { c.CustomerID, c.CustomerName, NoOfOrders = c.Orders == null ? 0 : c.Orders.Length });
             //foreach (var c in result)
             //    Console.WriteLine(c);
 
-            //Query Syntax
+            //Query Syntax  
             //var result = from c in ListGenerator.CustomersList
             //             select new { c.CustomerName, NoOfOrders = c.Orders == null ? 0 : c.Orders.Length };
             //foreach (var item in result)
